@@ -1,0 +1,7 @@
+openapi: '3.0.3'
+# Missing info block - required field
+paths:
+  /test:
+    get:
+      # Missing responses - required field
+      summary: Test endpoint

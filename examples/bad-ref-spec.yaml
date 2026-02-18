@@ -1,0 +1,15 @@
+openapi: '3.0.3'
+info:
+  title: Test API with Bad Ref
+  version: '1.0.0'
+paths:
+  /users:
+    get:
+      summary: Get users
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NonExistentSchema'
